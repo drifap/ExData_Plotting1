@@ -2,11 +2,14 @@
 
 source(file="load_data.R")
 
+# create function for plot 2
 plot2 <- function(){
-        #plot2
-        png("plot2.png")
-        plot(sub$new_Date,sub$Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab="")
-        dev.off()
+        png("plot2.png")                                   # open grapichs device
+        plot(sub$new_Date,sub$Global_active_power,         # set plot
+             type="l",                                     # set type - lines = l 
+             ylab="Global Active Power (kilowatts)",       # set Y label
+             xlab="")                                      # remove label from X
+        dev.off()                                          # close garphics
 }
 
-plot2()
+plot2()                                                    # run function to save plot
