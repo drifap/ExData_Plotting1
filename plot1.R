@@ -2,11 +2,13 @@
 
 source(file="load_data.R")
 
+# create function for plot1 
 plot1 <- function(){
-        #plot1
-        png("plot1.png")
-        hist(sub$Global_active_power,col="red",xlab="Global Active Power (kilowatts)",main="Global Active Power")
-        dev.off()
+        png("plot1.png")                                   # open grapichs device
+        hist(sub$Global_active_power,col="red",            # create hist and set colour
+             xlab="Global Active Power (kilowatts)",       # label X
+             main="Global Active Power")                   # Annote histagram
+        dev.off()                                          # close graphics device 
 }
 
-plot1()
+plot1()                                                    # use function to save graph to file
