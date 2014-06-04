@@ -27,7 +27,7 @@ plot4 <- function(){
                       col="blue",                                  # colour for line 2
                       lwd=2);                                      # determine width of line
                 legend("topright",                                 # add legend to plot
-                       pch=1,                                      # need to fix - lines not dots
+                       lty=1,                                      # linetype for legend
                        col=c("black","red","blue"),                # colour in legend
                        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
                 
