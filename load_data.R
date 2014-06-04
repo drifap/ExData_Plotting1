@@ -9,6 +9,6 @@ unlink(temp)
 
 data$new_Date <- strptime(paste(data$Date, data$Time),"%d/%m/%Y %H:%M:%S")  # character into date
 
-sub <- subset(data, data$new_Date >= as.POSIXct("2007-02-01 00:00:00")& data$new_Date <=as.POSIXct("2007-02-02 23:59:59"))        # subset
+sub <- subset(data, data$new_Date >= as.POSIXct("2007-02-01 00:00:00")& data$new_Date <=as.POSIXct("2007-02-02 23:59:59"))   # subset
 
 rm(data)
