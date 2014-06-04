@@ -29,6 +29,7 @@ plot4 <- function(){
                 legend("topright",                                 # add legend to plot
                        lty=1,                                      # linetype for legend
                        col=c("black","red","blue"),                # colour in legend
+                       bty="n",                                    # remove box around legend
                        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
                 
                 plot(new_Date,Global_reactive_power,               # set initial plot 4
